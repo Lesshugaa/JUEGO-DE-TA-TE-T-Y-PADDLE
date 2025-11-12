@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Actividad 17 - Ta-Te-Tí y Paddle 3D (p5.js)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>🎮 Actividad 17 — Ta-Te-Tí & Paddle 3D</h1>
+    <div class="controls">
+      <label for="gameSelect">Juego:</label>
+      <select id="gameSelect">
+        <option value="tictactoe">Ta-Te-Tí (2D)</option>
+        <option value="paddle">Paddle 3D (WEBGL)</option>
+      </select>
+
+      <button id="resetBtn" class="btn">Reiniciar</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="canvas-holder" class="canvas-wrap"></div>
+
+    <section class="help">
+      <h2>Controles</h2>
+      <p><strong>Ta-Te-Tí:</strong> clic en una casilla para colocar tu marca. Gana quien alinee 3.</p>
+      <p><strong>Paddle 3D:</strong> Jugador 1 con <kbd>W</kbd>/<kbd>S</kbd>. Jugador 2 con <kbd>↑</kbd>/<kbd>↓</kbd>.</p>
+    </section>
+
+    <section class="status">
+      <h2>Estado</h2>
+      <div id="statusText">Listo.</div>
+      <div id="scoreText">P1: 0 — P2: 0</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>p5.js • EEST N.º 1 — PWD 7° 2° B</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
